@@ -42,7 +42,6 @@ vanniktech-publish = "0.26.0"
 
 [plugins]
 dependencySync = { id = "com.rickbusarow.gradle-dependency-sync", version.ref = "rickBusarow-dependency-sync" }
-buildconfig = { id = "com.github.gmazzo.buildconfig", version.ref = "buildconfig" }
 buildParameters = {id = "org.gradlex.build-parameters", version.ref = "buildParameters" }
 dependencyAnalysis = { id = "com.autonomousapps.dependency-analysis", version.ref = "dependencyAnalysis" }
 dokkatoo = { id = "dev.adamko.dokkatoo", version.ref = "dokkatoo" }
@@ -59,12 +58,6 @@ poko = { id = "dev.drewhamilton.poko", version.ref = "poko" }
 [libraries]
 
 benManes-versions = { module = "com.github.ben-manes:gradle-versions-plugin", version.ref = "benManes-versions" }
-
-breadmoirai-github-release = { module = "com.rickbusarow.githubreleasepluginfork:github-release", version.ref = "rickBusarow-github-release" }
-
-buildconfig = { module = "com.github.gmazzo:gradle-buildconfig-plugin", version.ref = "buildconfig" }
-
-buildParameters = { module = "org.gradlex:build-parameters", version.ref = "buildParameters" }
 
 dependency-analysis-gradle-plugin = { module = "com.autonomousapps:dependency-analysis-gradle-plugin", version.ref = "dependencyAnalysis" }
 
