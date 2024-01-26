@@ -25,7 +25,6 @@
       ]
     },
     {
-      "automergeStrategy": "rebase",
       "matchPackagePrefixes": [
         "com.rickbusarow.dispatch:",
         "com.rickbusarow.doks:",
@@ -39,6 +38,7 @@
         "com.rickbusarow.modulecheck:"
       ],
       "automerge": true,
+      "automergeStrategy": "rebase",
       "automergeType": "pr",
       "labels": [ "dependencies", "canary" ]
     }
