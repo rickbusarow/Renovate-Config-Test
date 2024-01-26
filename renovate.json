@@ -43,7 +43,7 @@
       "automerge": true,
       "automergeStrategy": "rebase",
       "automergeType": "pr",
-      "labels": [ "dependencies", "canary" ]
+      "labels": [ "dependencies" ]
     }
   ],
   "labels": [
