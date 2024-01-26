@@ -1,21 +1,22 @@
 plugins {
-    kotlin("jvm") version "1.9.22"
+  alias(libs.plugins.kotlin.jvm)
 }
 
 group = "com.rickbusarow.renovateConfigTest"
 version = "1.0-SNAPSHOT"
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 dependencies {
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
+  testImplementation("org.jetbrains.kotlin:kotlin-test")
 }
 
 tasks.test {
-    useJUnitPlatform()
+  useJUnitPlatform()
 }
+
 kotlin {
-    jvmToolchain(17)
+  jvmToolchain(17)
 }

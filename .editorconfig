@@ -23,37 +23,22 @@ ij_wrap_on_typing = false
 # noinspection EditorConfigKeyCorrectness,EditorConfigHeaderUniqueness,EditorConfigPartialOverride
 [{*.kt,*.kts}]
 kotlin_imports_layout = *,java.**,javax.**,kotlin.**,^
-# Back-ticked method names are allowed to exceed the line length. That's especially helpful for
-# test methods with descriptive names.
-ktlint_ignore_back_ticked_identifier = true
 
-kt-rules_project_version = 0.10.0-SNAPSHOT
-ktlint_kt-rules_wrapping_style = equal
+kt-rules_wrapping_style = greedy
 
-# Disabled rules for 0.48.0+
 ktlint_standard_class-naming = disabled
+ktlint_standard_class-signature = disabled
 ktlint_standard_filename = disabled
+ktlint_standard_function-expression-body = disabled
 ktlint_standard_function-naming = disabled
 ktlint_standard_function-signature = disabled
 ktlint_standard_max-line-length = disabled
 ktlint_standard_no-empty-first-line-in-method-block = disabled
 ktlint_standard_property-naming = disabled
 
-# Disabled rules for 1.0.0+
-ktlint_standard_function-expression-body = disabled
-ktlint_standard_class-signature = disabled
-
-ktlint_experimental = disabled
 ktlint_code_style = intellij_idea
-
-# noinspection EditorConfigKeyCorrectness,EditorConfigHeaderUniqueness,EditorConfigPartialOverride
-[**/kase/generator/*.kt]
-ktlint_kt-rules_no-since-in-kdoc = disabled
-
-# noinspection EditorConfigKeyCorrectness,EditorConfigHeaderUniqueness,EditorConfigPartialOverride
-[**/{overloads/*.kt,testElements.kt}]
-ktlint_standard = disabled
-ktlint = disabled
+ktlint_experimental = disabled
+ktlint_ignore_back_ticked_identifier = true
 
 # noinspection EditorConfigKeyCorrectness,EditorConfigHeaderUniqueness,EditorConfigPartialOverride
 [{*.kt,*.kts}]

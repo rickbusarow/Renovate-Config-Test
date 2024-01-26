@@ -1,0 +1,47 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json", "extends": [ "config:base" ],
+  "rebaseWhen": "conflicted",
+  "rebaseLabel": "rebase",
+  "packageRules": [
+    {
+      "groupName": "Kotlin and compiler plugins",
+      "matchPackagePrefixes": [
+        "org.jetbrains.kotlin:",
+        "com.google.devtools.ksp:",
+        "com.square.anvil:",
+        "dev.drewhamilton.poko:"
+      ]
+    },
+    {
+      "groupName": "KtLint libs",
+      "matchPackagePrefixes": [
+        "com.pinterest.ktlint:",
+        "com.rickbusarow.ktlint:",
+        "com.rickbusarow.ktrules:"
+      ]
+    },
+    {
+      "automergeStrategy": "rebase",
+      "matchPackagePrefixes": [
+        "com.rickbusarow.dispatch:",
+        "com.rickbusarow.doks:",
+        "com.rickbusarow.gradle-dependency-sync:",
+        "com.rickbusarow.hermit:",
+        "com.rickbusarow.kase:",
+        "com.rickbusarow.kgx:",
+        "com.rickbusarow.ktlint:",
+        "com.rickbusarow.ktrules:",
+        "com.rickbusarow.lattice:",
+        "com.rickbusarow.modulecheck:"
+      ],
+      "automerge": true,
+      "automergeType": "pr",
+      "autoApprove": true,
+      "labels": [ "dependencies" ]
+    }
+  ],
+  "labels": [
+    "dependencies",
+    "automerge"
+  ]
+}
