@@ -84,10 +84,6 @@ ec4j-core = { module = "org.ec4j.core:ec4j-core", version.ref = "ec4j" }
 
 google-ksp = { module = "com.google.devtools.ksp:symbol-processing-gradle-plugin", version.ref = "google-ksp" }
 
-integration-test = { module = "com.coditory.gradle:integration-test-plugin", version.ref = "integration-test" }
-
-johnrengelman-shadowJar = { module = "com.github.johnrengelman:shadow", version.ref = "johnrengelman-shadow" }
-
 junit-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "jUnit" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "jUnit" }
 junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "jUnit" }
