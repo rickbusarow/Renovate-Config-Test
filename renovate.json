@@ -37,6 +37,9 @@
         "com.rickbusarow.lattice:",
         "com.rickbusarow.modulecheck:"
       ],
+      "matchPackageNames": [
+        "com.rickbusarow.module-check"
+      ],
       "automerge": true,
       "automergeStrategy": "rebase",
       "automergeType": "pr",
