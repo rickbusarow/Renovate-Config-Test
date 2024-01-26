@@ -41,7 +41,7 @@
       "automerge": true,
       "automergeType": "pr",
       "autoApprove": true,
-      "labels": [ "dependencies" ]
+      "labels": [ "dependencies", "canary" ]
     }
   ],
   "labels": [
