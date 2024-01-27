@@ -16,6 +16,7 @@ jobs:
         id: get_token
         uses: tibdex/github-app-token@v2
         with:
+          app_id: an-app-id
           private_key: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
