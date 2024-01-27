@@ -6,5 +6,7 @@
   "onboarding": true,
   "onboardingBranch": "github-renovate/configure",
   "platform": "github",
-  "repositories": []
+  "repositories": [
+    "rickbusarow/Renovate-Config-Test"
+  ]
 }
