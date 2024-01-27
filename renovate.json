@@ -47,7 +47,6 @@
       "automerge": true,
       "automergeStrategy": "rebase",
       "automergeType": "pr",
-      "labels": [ "dependencies" ]
     }
   ],
   "labels": [
