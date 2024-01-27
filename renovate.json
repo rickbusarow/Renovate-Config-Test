@@ -40,6 +40,10 @@
       "matchPackageNames": [
         "com.rickbusarow.module-check"
       ],
+      "matchRepositories": [
+        "/^https:\\/\\/repo\\.maven\\.apache\\.org\\/maven2\\//$",
+        "/^https:\\/\\/plugins\\.gradle\\.org\\/m2\\//$"
+      ],
       "automerge": true,
       "automergeStrategy": "rebase",
       "automergeType": "pr",
