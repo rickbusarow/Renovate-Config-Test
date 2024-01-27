@@ -16,8 +16,8 @@ jobs:
         id: get_token
         uses: tibdex/github-app-token@v2
         with:
-          app_id: 808910
-          private_key: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          app_id: ${{ secrets.PR_BOT_APP_ID }}
+          private_key: ${{ secrets.PR_BOT_PRIVATE_KEY }}
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       - name: Setup node
