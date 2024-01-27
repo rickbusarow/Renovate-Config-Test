@@ -12,12 +12,12 @@ jobs:
   renovate:
     runs-on: ubuntu-latest
     steps:
-      - name: Get token
-        id: get_token
-        uses: tibdex/github-app-token@v2
-        with:
-          app_id: ${{ secrets.PR_BOT_APP_ID }}
-          private_key: ${{ secrets.PR_BOT_PRIVATE_KEY }}
+#      - name: Get token
+#        id: get_token
+#        uses: tibdex/github-app-token@v2
+#        with:
+#          app_id: ${{ secrets.PR_BOT_APP_ID }}
+#          private_key: ${{ secrets.PR_BOT_PRIVATE_KEY }}
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       - name: Setup node
@@ -26,4 +26,4 @@ jobs:
         uses: renovatebot/github-action@f9c81dddc9b589e4e6ae0326d1e36f6bc415d230 # v39.2.4
         with:
           configurationFile: .github/renovate-sh.json
-          token: '${{ steps.get_token.outputs.token }}'
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
