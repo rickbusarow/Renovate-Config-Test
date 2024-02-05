@@ -1,0 +1,12 @@
+name: Canary
+
+on:
+  pull_request:
+
+jobs:
+
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out
+        uses : actions/checkout@v3
