@@ -15,24 +15,16 @@ jobs:
   renovate:
     runs-on: ubuntu-latest
     steps:
-      - name: just env
-        run: env
-
-      - name: echo env
-        run: echo "$env"
-
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
-        with:
-          ref: ${{ github.head_ref }}
 
-#      - name: Setup node
-#        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
-#
-#      - name: Renovate
-#        uses: renovatebot/github-action@42c1d3cb1d1ca891765626ba71cdff5e757258de # v40.0.2
-#        with:
-#          configurationFile: .github/renovate-sh.json
-#          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-#        env:
-#          LOG_LEVEL: debug
+      - name: Setup node
+        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
+
+      - name: Renovate
+        uses: renovatebot/github-action@42c1d3cb1d1ca891765626ba71cdff5e757258de # v40.0.2
+        with:
+          configurationFile: .github/renovate-sh.json
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        env:
+          LOG_LEVEL: debug
