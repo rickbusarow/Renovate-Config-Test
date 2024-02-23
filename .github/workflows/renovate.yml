@@ -7,9 +7,6 @@ on:
   push:
     branches:
       - main
-  pull_request_target:
-    branches:
-      - main
 
 jobs:
   renovate:
@@ -21,10 +18,17 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
 
+      - name: Create GitHub App Token
+        uses: actions/create-github-app-token@e8e39f73bb84fdf315a015fa3104f314c0a258b4 # v1
+        id: app-token
+        with:
+          app-id: ${{ secrets.PR_BOT_APP_ID }}
+          private-key: ${{ secrets.PR_BOT_PRIVATE_KEY }}
+
       - name: Renovate
-        uses: renovatebot/github-action@42c1d3cb1d1ca891765626ba71cdff5e757258de # v40.0.2
+        uses: renovatebot/github-action@8f6b0f762415909f60b0efb1817c4dee029ea806 # v40.1.1
         with:
           configurationFile: .github/renovate-sh.json
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          token: ${{ steps.app-token.outputs.token }}
         env:
           LOG_LEVEL: debug
