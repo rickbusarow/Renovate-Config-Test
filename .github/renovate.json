@@ -6,8 +6,13 @@
   ],
   "rebaseWhen": "conflicted",
   "rebaseLabel": "rebase",
+  "automerge": true,
+  "automergeStrategy": "rebase",
+  "automergeType": "pr",
+  "autoApprove": true,
+  "packageRules": [],
   "labels": [
-    "dependencies",
-    "automerge"
+    "automerge",
+    "dependencies"
   ]
 }
