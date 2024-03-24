@@ -1,0 +1,12 @@
+name: CI
+
+on:
+  pull_request:
+
+jobs:
+
+  all-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: stamp
+        run: echo "yaay!"
