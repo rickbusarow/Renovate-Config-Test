@@ -19,3 +19,4 @@ local.properties
 !/.idea/inspectionProfiles/
 !.idea/detekt.xml
 !.idea/ktlint-plugin.xml
+!.idea/jsonSchemas.xml
