@@ -92,17 +92,6 @@ pull_request_rules:
         remove:
           - *name_rebase
 
-  - name: Rebase any PR with a 'rebase' label
-    conditions:
-      - and: *label_rebase
-    actions:
-      rebase:
-        autosquash: true
-        bot_account: *name_merge_bot
-      label:
-        remove:
-          - *name_rebase
-
   - name: Re-queue any PR with a 'requeue' label
     conditions:
       - label=requeue
