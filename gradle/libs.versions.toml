@@ -12,7 +12,7 @@ rickBusarow-kase = "0.11.1"
 rickBusarow-kgx = "0.1.12"
 rickBusarow-ktlint = "0.2.2"
 rickBusarow-ktrules = "1.4.0"
-rickBusarow-moduleCheck = "0.12.4"
+rickBusarow-moduleCheck = "0.12.5"
 
 [plugins]
 buildconfig = { id = "com.github.gmazzo.buildconfig", version.ref = "buildconfig" }
