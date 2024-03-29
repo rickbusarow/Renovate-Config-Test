@@ -38,8 +38,8 @@ pull_request_rules:
         merge_method: fast-forward
         update_method: rebase # this is also the default when 'merge_method' is 'fast-forward'
         autosquash: true
-        merge_bot_account: *name_rb_org_bot
-        update_bot_account: *name_rb_org_bot
+        merge_bot_account: rbusarow
+        update_bot_account: rbusarow
 
   - name: Remove automerge label once merged
     conditions:
@@ -75,7 +75,7 @@ pull_request_rules:
     actions:
       rebase:
         autosquash: true
-        bot_account: *name_rb_org_bot
+        bot_account: rbusarow
       label:
         remove:
           - *name_approved
@@ -86,7 +86,7 @@ pull_request_rules:
     actions:
       rebase:
         autosquash: true
-        bot_account: *name_rb_org_bot
+        bot_account: rbusarow
       label:
         remove:
           - *name_rebase
@@ -100,7 +100,7 @@ pull_request_rules:
         merge_method: fast-forward
         update_method: rebase # this is also the default when 'merge_method' is 'fast-forward'
         autosquash: true
-        merge_bot_account: *name_rb_org_bot
+        merge_bot_account: rbusarow
       label:
         remove:
           - requeue
