@@ -2,7 +2,7 @@
 ajalt-mordant = "2.3.0"
 kotlin = "2.0.0-Beta4"
 buildconfig = "5.3.1"
-buildParameters = "1.4.2"
+buildParameters = "1.4.3"
 dependencyAnalysis = "1.37.0"
 jakeWharton-picnic = "0.6.0"
 kotlinx-serialization = "1.6.2"
