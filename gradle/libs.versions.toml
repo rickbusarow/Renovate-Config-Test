@@ -15,7 +15,6 @@ rickBusarow-ktrules = "1.3.0"
 rickBusarow-moduleCheck = "0.12.4"
 
 [plugins]
-buildconfig = { id = "com.github.gmazzo.buildconfig", version.ref = "buildconfig" }
 buildParameters = { id = "org.gradlex.build-parameters", version.ref = "buildParameters" }
 dependencyAnalysis = { id = "com.autonomousapps.dependency-analysis", version.ref = "dependencyAnalysis" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
