@@ -21,7 +21,7 @@ shared:
   name-approved: &name_approved approved
   name-automerge: &name_automerge automerge
   name-rb-org-bot: &name_rb_org_bot rb-org-bot[bot]
-  name-merge-bot: &name_merge_bot rbusarow
+  name-merge-bot: &name_merge_bot rbusarow-bot
   name-rebase: &name_rebase rebase
   success-ci: &success_ci
     - check-success=all-checks
