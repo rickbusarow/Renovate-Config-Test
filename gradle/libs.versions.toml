@@ -1,5 +1,5 @@
 [versions]
-ajalt-mordant = "3.0.0"
+ajalt-mordant = "3.0.1"
 kotlin = "2.0.21"
 buildconfig = "5.3.1"
 buildParameters = "1.4.4"
