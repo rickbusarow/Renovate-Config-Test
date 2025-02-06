@@ -1,17 +1,17 @@
 [versions]
 ajalt-mordant = "3.0.1"
-kotlin = "2.0.21"
+kotlin = "2.1.10"
 buildconfig = "5.3.1"
 buildParameters = "1.4.4"
-dependencyAnalysis = "2.4.2"
+dependencyAnalysis = "2.8.0"
 jakeWharton-picnic = "0.7.0"
-kotlinx-serialization = "1.7.3"
-kotlinx-coroutines = "1.9.0"
+kotlinx-serialization = "1.8.0"
+kotlinx-coroutines = "1.10.1"
 rickBusarow-doks = "0.2.0"
 rickBusarow-kase = "0.11.1"
 rickBusarow-kgx = "0.1.12"
 rickBusarow-ktlint = "0.2.2"
-rickBusarow-ktrules = "1.4.0"
+rickBusarow-ktrules = "1.5.0"
 rickBusarow-moduleCheck = "0.12.5"
 
 [plugins]
