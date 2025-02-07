@@ -1,0 +1,39 @@
+name: Rebase main-2 on main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  rebase:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Ensure full history is available for rebase
+
+      - name: Set up Git credentials
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch all branches
+        run: git fetch --all
+
+      - name: Switch to main-2 branch
+        run: git checkout main-2
+
+      - name: Rebase main onto main-2
+        run: git rebase origin/main
+
+      - name: Push rebased changes (force-push)
+        run: git push origin main-2 --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Handle conflicts
+        if: failure()
+        run: echo "Conflict detected. Please resolve manually."
