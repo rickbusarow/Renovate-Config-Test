@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write  # Ensure the token can push changes
+
 jobs:
   rebase:
     runs-on: ubuntu-latest
