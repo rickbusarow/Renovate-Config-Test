@@ -4,6 +4,10 @@
     "config:best-practices",
     "default:disableRateLimiting"
   ],
+  "baseBranches": [
+    "main",
+    "main-2"
+  ],
   "rebaseWhen": "conflicted",
   "rebaseLabel": "rebase",
   "automerge": true,
