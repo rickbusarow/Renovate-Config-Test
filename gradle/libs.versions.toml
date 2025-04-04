@@ -11,7 +11,7 @@ rickBusarow-doks = "0.2.0"
 rickBusarow-kase = "0.10.0"
 rickBusarow-kgx = "0.1.10"
 rickBusarow-ktlint = "0.2.1"
-rickBusarow-ktrules = "1.3.0"
+rickBusarow-ktrules = "1.5.0"
 rickBusarow-moduleCheck = "0.12.4"
 
 [plugins]
