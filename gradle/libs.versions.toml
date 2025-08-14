@@ -1,6 +1,6 @@
 [versions]
 ajalt-mordant = "3.0.1"
-kotlin = "2.1.21"
+kotlin = "2.2.10"
 buildconfig = "5.6.7"
 buildParameters = "1.4.3"
 dependencyAnalysis = "2.19.0"
